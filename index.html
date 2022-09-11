@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <section class="content">
+      <div class="container">
+        <div class="content-inner">
+          <h1 class="text-center my-2">Country</h1>
+          <form class="content-form">
+            <div class="row">
+              <div class="w-25 p-1">
+                <input class="content-input form-control" type="text" aria-label="conut-search" required>
+              </div>
+
+              <div class="col-2 p-1">
+                <button class="btn btn-primary" type="submit">search</button>
+              </div>
+            </div>
+          </form>
+
+          <ul class="content-list list-unstyled mt-4 d-flex flex-wrap justify-content-between">
+
+          </ul>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  
+    <!-- Modal -->
+    <div class="modal modall fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+          <p class="ms-3   class-modal1"></p>
+          <p class="ms-3   class-modal2"></p>
+          <p class="ms-3   class-modal3"></p>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="content-spinner spinner-border text-primary position-absolute top-0 end-0 bottom-0 start-0 m-auto d-none"
+    role="status">
+
+    <template id="content-template">
+      <li class="content-item mt-4 card">
+        <img src="" class="content-img card-img-top" alt="" width="300" height="180">
+        <div class="card-body">
+          <p class="content-title card-text fw-bold"></p>
+            <p class="content-population mb-1"></p>
+            <p class="content-area mb-1"></p>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="modal-button js-query btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Modal
+            </button>
+        </div>
+      </li>
+    </template>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
